@@ -20,3 +20,28 @@ a {
 		outline: 0;
 	}
 }
+
+.main-navigation{ 
+a {
+	color: $color__linkmenu;
+
+	&:visited {
+		color: $color__link-visitedmenu;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hovermenu;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+}

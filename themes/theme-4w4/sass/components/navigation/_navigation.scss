@@ -1,12 +1,14 @@
 .main-navigation {
 	display: block;
 	width: 100%;
+	
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		background-color:#000 ;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -70,11 +72,21 @@
 }
 
 /* Small menu. */
+.menu-toggle{
+	padding: 0;
+	transition: transform .25s;
+	transform: rotate(0deg);
+}
+.main-navigation.toggled .menu-toggle{
+	transform: rotate(90deg);
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
+/*---menu tablet---*/
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
@@ -83,6 +95,7 @@
 
 	.main-navigation ul {
 		display: flex;
+		justify-content: space-around;
 	}
 }
 

@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+/*menu principal*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -537,6 +538,26 @@ a:hover, a:active {
   outline: 0;
 }
 
+.main-navigation a {
+  color: #e1e141;
+}
+
+.main-navigation a:visited {
+  color: #bec451;
+}
+
+.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
+  color: #ffffff;
+}
+
+.main-navigation a:focus {
+  outline: thin dotted;
+}
+
+.main-navigation a:hover, .main-navigation a:active {
+  outline: 0;
+}
+
 /* Forms
 --------------------------------------------- */
 button,
@@ -621,6 +642,16 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.site-branding, #primary, #colophon {
+  margin-left: 3rem;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -636,6 +667,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  background-color: #000;
 }
 
 .main-navigation ul ul {
@@ -677,17 +709,29 @@ textarea {
 }
 
 /* Small menu. */
+.menu-toggle {
+  padding: 0;
+  transition: transform .25s;
+  transform: rotate(0deg);
+}
+
+.main-navigation.toggled .menu-toggle {
+  transform: rotate(90deg);
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
+/*---menu tablet---*/
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
   }
   .main-navigation ul {
     display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -940,12 +984,8 @@ textarea {
 body {
   margin: 0;
   padding: 0;
-  background-color: #098ee1;
+  background-color: #28bee4;
   font-family: "Montserrat", sans-serif;
-}
-
-body.home {
-  background-color: aqua;
 }
 
 body.home::after {
@@ -959,25 +999,21 @@ body.home::after {
   right: 0;
   background-color: #fff;
   z-index: -1;
-  clip-path: polygon(100% 66% 72% 100% 100% 100%);
+  clip-path: polygon(100% 57%, 62% 100%, 100% 100%);
 }
 
 @media (min-width: 800px) {
   body.home::after {
-    clip-path: polygon(85% 0, 100% 0, 100% 100% 64% 100%);
+    clip-path: polygon(84% 0, 100% 0, 100% 100%, 64% 100%);
   }
 }
 
-#page {
-  margin: 0 2rem 0 2rem;
-}
-
-.site-title {
+body.home .site-title {
   font-size: clamp(1.2rem, -0.875rem + 8.333vw, 4rem);
   margin-bottom: 0;
 }
 
-.site-title a {
+body.home .site-title a {
   text-decoration: none;
   font-weight: bold;
 }
