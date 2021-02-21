@@ -139,8 +139,12 @@ add_action( 'widgets_init', 'theme_4w4_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+//echo "<div>"
+//echo filemtime(get_template_directory() . "/style.css");
+//echo "</div>"
+
 function theme_4w4_scripts() {
-	wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'theme-4w4-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . "/style.css") );
 
 	wp_enqueue_style( 'theme-4w4-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap', false);
 
