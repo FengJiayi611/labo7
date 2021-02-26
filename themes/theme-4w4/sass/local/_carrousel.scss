@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
    
     &:nth-of-type(1){
         background-color: aqua;
