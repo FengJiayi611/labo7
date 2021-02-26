@@ -662,6 +662,10 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+body {
+  overflow-x: hidden;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -771,6 +775,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     position: static;
+    width: 100vw;
   }
 }
 
@@ -1073,5 +1078,33 @@ body .site-title a {
 --------------------------------------------- */
 .site {
   margin: 0 2rem 0 2rem;
+}
+
+/* accueil carrousel
+--------------------------------------------- */
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 20vh;
+  transition: transform 5s;
+}
+
+.carrousel div {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: aqua;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: blueviolet;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: darksalmon;
 }
 /*# sourceMappingURL=style.css.map */
