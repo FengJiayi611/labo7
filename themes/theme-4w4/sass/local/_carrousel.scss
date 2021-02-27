@@ -22,3 +22,22 @@
     } //fin du div
 }
 }
+.button_carrousel{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    a{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        background-color: rgb(220, 196, 230);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}

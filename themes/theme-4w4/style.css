@@ -692,7 +692,6 @@ body {
   margin: 0;
   padding-left: 0;
   background-color: #0c1e67;
-  text-align: center;
 }
 
 .main-navigation ul ul {
@@ -769,6 +768,7 @@ body {
   .menu-toggle {
     display: none;
   }
+  .main-navigation.menu-toggle ul,
   .main-navigation ul {
     display: flex;
     height: 2rem;
@@ -1035,6 +1035,10 @@ body.home {
   overflow-x: hidden;
 }
 
+body.home #primary {
+  width: 100vw;
+}
+
 body.home::after {
   position: absolute;
   width: 100%;
@@ -1108,5 +1112,24 @@ body .site-title a {
 
 .carrousel div:nth-of-type(3) {
   background-color: darksalmon;
+}
+
+.button_carrousel {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_carrousel a {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #dcc4e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
