@@ -39,7 +39,7 @@ get_header();
                     $precedent = $session;
                ?>
                <P> <?php echo $session . " - " . $titre; ?> </P>
-               <p> <?php echo $resume ?></p>
+               <p> <?php echo $resume; ?></p>
             <?php
 			endwhile;    
 		endif;

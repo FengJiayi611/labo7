@@ -197,9 +197,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function extraire_cours($query){
 	if($query ->is_catagery('cours'))
 	{
-		$query->set('posts_per_pages', -1);
+		$query->set('posts_per_page', -1);
 		$query->set('orderby', 'title');
 		$query->set('order', 'asc');
 	}
 }
-add_action('pre_get_posts','extraire_cours' );
+add_action('pre_get_posts','extraire_cours');

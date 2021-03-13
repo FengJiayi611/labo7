@@ -732,6 +732,7 @@ body {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: .5rem;
 }
 
 /* Small menu burger. */
