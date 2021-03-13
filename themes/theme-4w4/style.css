@@ -688,12 +688,14 @@ body {
 
 .main-navigation ul {
   display: none;
+  position: absolute;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #0c1e67;
-  position: absolute;
-  width: 100%;
+  background-color: #000;
+  text-align: left;
+  /*fin du sub-menu*/
 }
 
 .main-navigation ul ul {
@@ -701,31 +703,24 @@ body {
   float: left;
   position: absolute;
   top: 100%;
+  transition: left 0.5s;
   left: -999em;
   z-index: 99999;
 }
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
+.main-navigation ul ul li a {
+  padding-left: 20px;
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: 100%;
 }
 
-.main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 0;
 }
 
-.main-navigation li {
+.main-navigation ul li {
   position: relative;
 }
 
@@ -735,20 +730,19 @@ body {
   padding: .5rem;
 }
 
-/* Small menu burger. */
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
 .menu-toggle {
   padding: 0;
   border: 0;
-  margin-left: 3rem;
-  background-color: #fff;
 }
 
-/*
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background: #eaedf2;
+  background: #fafbfc;
 }
-*/
+
 .menu-toggle:focus {
   outline: 1px solid #fff;
   outline-offset: -4px;
@@ -758,24 +752,39 @@ body {
   transform: scale(0.99);
 }
 
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
+}
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
-/*---menu tablet---*/
+/* ---------------------------------------------------------------------------
+menu tablet
+------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
   }
-  .main-navigation.menu-toggle ul,
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    height: 2rem;
-    justify-content: space-around;
-    align-items: center;
     position: static;
-    width: 100vw;
+    justify-content: space-around;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    display: none;
   }
 }
 

@@ -11,68 +11,41 @@
 		margin: 0;
 		padding-left: 0;
 		background-color: #000;
-	
-	
+		text-align: left;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
 			top: 100%;
-			
+			transition: left 0.5s;
 			left: -999em;
 			z-index: 99999;
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-
 			li {
-
-				&:hover > ul,
-				&.focus > ul {
-					display: block;
-					left: auto;
+				a{
+				padding-left: 20px ;
 				}
 			}
 
 
 			a {
-				width: 200px;
+				width: 100%;
 			}
 
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-			
 		}
 
-		li:hover > ul,
+		//li:hover > ul,
 		li.focus > ul {
 			left: 0;
 		
+		}/*fin du sub-menu*/
+		li {
+			position: relative;
 		}
-
-
 	}
 
-	li {
-		position: relative;
-	 flex : 1;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	
-
-	}
 
 	a {
 		display: block;
@@ -132,7 +105,17 @@ menu tablet
 		display: flex;
 		position : static;
 		justify-content: space-around;
-		
+
+		li:hover ul{
+			display: block;
+			position: absolute;
+			width: 400px;
+			height: 500px;	
+		}
+
+		ul{
+			display: none;		
+		}	
 	}
 }
 
