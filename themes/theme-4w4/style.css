@@ -1107,6 +1107,39 @@ body .site-title a {
   list-style-type: none;
 }
 
+/* liste des blocs de cours par type de cours */
+.home .cours {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .cours section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home .cours section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 29%;
+  margin: 1%;
+}
+
+.home .cours section article p {
+  margin: .3rem;
+  font-size: 1rem;
+}
+
+.home .cours section article a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* layout
 --------------------------------------------- */
 .site {
