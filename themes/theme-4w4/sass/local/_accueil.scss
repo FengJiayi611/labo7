@@ -55,28 +55,43 @@ body{
 .home .cours{
     display: flex;
     flex-direction: column;
-    section{
+
+    section{ 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 
-    article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid #aaa;
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #aaa;
+            width: 90%;
+            margin: 1%;
+        
+            p{
+                margin: .4rem;
+                font-size: 1rem;
+            }
+            a{
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    @include media-table{
+        article{
+            width: 45%;
+            margin: 1%;
+        }
+    }
+
+    @include media-desktop{
+        article{ 
         width: 29%;
         margin: 1%;
-        p{
-            margin: .3rem;
-            font-size: 1rem;
         }
-        a{
-            font-size: 2rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-     }
-  }
+    }
 }

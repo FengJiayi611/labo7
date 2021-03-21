@@ -10,12 +10,16 @@
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
-$largeur_desktop : 800px;
+
 @mixin media-desktop {
-	@media (min-width: $largeur_desktop){
+	@media (min-width: 1200px){
 		@content;
 	}
 }
-  
+@mixin media-table {
+	@media (min-width: 800px){
+		@content;
+	}
+}
   
 
