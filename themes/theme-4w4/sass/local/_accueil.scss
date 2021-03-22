@@ -96,12 +96,14 @@ body{
      
     }
 }
+
+// <651 article -> column
 @media (max-width: 650px){
     article{ 
         width: 90%;     
         }
 }
-
+//add color
 section:nth-of-type(1){
     article{
         background-image: linear-gradient(rgb(247, 156, 156), lightblue);
