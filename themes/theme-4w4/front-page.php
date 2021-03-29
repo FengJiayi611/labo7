@@ -33,14 +33,18 @@ get_header();
 				
 				if($tPropriété['typeCours'] != $precedent):
 					if ("XXXXXX" != $precedent) : ?>
-			    </section>
+			</section>
 				<?php endif?>
 				<h2><?php echo $tPropriété['typeCours'] ?></h2>
 				<section>
 				<?php endif?>
 
-		   <?php get_template_part( 'template-parts/content', 'cours-article' );
-          
+			<?php if($tPropriété['typeCours'] == "Web"):
+				get_template_part( 'template-parts/content', 'cours-carrousel' );
+			else:
+				get_template_part( 'template-parts/content', 'cours-article' );
+			endif;
+		   
 		   $precedent = $tPropriété['typeCours'];
 			endwhile; ?>  
 			</section> <!-- fin section cours--> 

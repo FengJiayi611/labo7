@@ -156,6 +156,8 @@ function theme_4w4_scripts() {
 
 	wp_register_script( 'theme-4w4-slider', get_template_directory_uri() . '/js/slider.js', array(), _S_VERSION, true );
 
+	//wp_register_script( 'theme-4w4-slider', get_template_directory_uri() . '/js/slider.js', array(), filemtime(get_template_directory() . "/js/slider.js"), true );
+
 	wp_enqueue_script( 'theme-4w4-burger', get_template_directory_uri() . '/js/burger.js', array(), _S_VERSION, true );
 	
 

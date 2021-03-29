@@ -50,53 +50,14 @@
 		
 		<?php 
 		if(is_front_page()): ?>
-			<section class="carrousel-2">
-				<article class="slider_conteneur">
-				 <div class="slider">
-				 <img width="150" height="150" src="http://localhost:8888/4w41/wp-content/uploads/2021/03/694f0f0c-fbf7-48a7-bf8c-05468f1ad589-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
-					<div class="slider_info">				
-						<p>582-3W3 - Web - 90h</p>
-						<a href="http://localhost:8888/4w41/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-						<p>Session : 3</p>
-					</div>
-				 </div>					
-				</article>
 
-				<article class="slider_conteneur">
-				 <div class="slider">
-						<img src="" alt="">
-					<div class="slider_info">				
-						<p>582-3W3 - Web - 90h</p>
-						<a href="http://localhost:8888/4w41/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-						<p>Session : 3</p>
-					</div>
-				 </div>					
-				</article>
-
-				<article class="slider_conteneur">
-				 <div class="slider">
-						<img src="" alt="">
-					<div class="slider_info">				
-						<p>582-3W3 - Web - 90h</p>
-						<a href="http://localhost:8888/4w41/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
-						<p>Session : 3</p>
-					</div>
-				 </div>					
-				</article>				
-			</section>
-			
 			 <!-- carrousel -->
 			<section class="ctrl-carrousel">
 			<input class= "rad-carrousel" type="radio" name="red-carrousel">
 			<input class= "rad-carrousel" type="radio" name="red-carrousel">
 			<input class= "rad-carrousel" type="radio" name="red-carrousel">
 			</section>
-        <!-- carrousel -->
-		    <!--section class="button_carrousel"-->
-				<!--a id="un">1</a-->
-				<!--a id="deux">2</a-->
-				<!--a id="trois">3</a-->
-			<!--/section-->	
+       
 		<?php endif?>
 			
 	<!--	<img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">-->

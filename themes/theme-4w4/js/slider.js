@@ -9,7 +9,7 @@ for(const bt of bout)
     bt.value = k++;
     console.log(bt.value)
     bt.addEventListener('mousedown', function(){
-        carrousel.styletransform ="translateX(" + (-this.value*100) +"vw)"
+        carrousel.style.transform ="translateX(" + (-this.value*100) + "vw)"
     })
 }
 
