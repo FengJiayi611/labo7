@@ -51,10 +51,10 @@
 		<?php 
 		if(is_front_page()): ?>
 			<section class="carrousel">
-				<article class="slide_conteneur">
-				 <div class="silde">
+				<article class="slider_conteneur">
+				 <div class="slider">
 						<img src="" alt="">
-					<div class="silde_info">				
+					<div class="slider_info">				
 						<p>582-3W3 - Web - 90h</p>
 						<a href="http://localhost:8888/4w41/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
 						<p>Session : 3</p>
@@ -62,10 +62,10 @@
 				 </div>					
 				</article>
 
-				<article class="slide_conteneur">
-				 <div class="silde">
+				<article class="slider_conteneur">
+				 <div class="slider">
 						<img src="" alt="">
-					<div class="silde_info">				
+					<div class="slider_info">				
 						<p>582-3W3 - Web - 90h</p>
 						<a href="http://localhost:8888/4w41/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de sites Web dynamiques</a>
 						<p>Session : 3</p>
