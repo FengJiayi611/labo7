@@ -1341,14 +1341,14 @@ La barre du millieu
 
 /* slider
 --------------------------------------------- */
-.carrousel {
+.carrousel-2 {
   display: flex;
   width: 300vw;
-  height: 20vh;
+  height: 30vh;
   transition: transform 5s;
 }
 
-.carrousel .slider_conteneur {
+.carrousel-2 .slider_conteneur {
   width: 100vw;
   display: flex;
   align-items: center;
@@ -1356,61 +1356,59 @@ La barre du millieu
   overflow-x: hidden;
 }
 
-.carrousel .slider_conteneur .slider {
-  width: 60%;
+.carrousel-2 .slider_conteneur .slider {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.carrousel .slider_conteneur .slider img {
+@media (min-width: 800px) {
+  .carrousel-2 .slider_conteneur .slider {
+    width: 60%;
+  }
+}
+
+.carrousel-2 .slider_conteneur .slider img {
   display: block;
   margin: 2%;
 }
 
-.carrousel .slider_conteneur .slider .slider_info {
+.carrousel-2 .slider_conteneur .slider .slider_info {
   display: flex;
   flex-direction: column;
 }
 
-.carrousel .slider_conteneur .slider .slider_info p {
+.carrousel-2 .slider_conteneur .slider .slider_info p {
   font-size: .8rem;
 }
 
-.carrousel .slider_conteneur .slider .slider_info a {
+.carrousel-2 .slider_conteneur .slider .slider_info a {
   font-size: 1.2rem;
   text-decoration: none;
 }
 
-.carrousel .slider_conteneur:nth-of-type(1) {
+.carrousel-2 .slider_conteneur .slider:nth-of-type(1) {
   background-color: aqua;
 }
 
-.carrousel .slider_conteneur:nth-of-type(2) {
+.carrousel-2 .slider_conteneur .slider:nth-of-type(2) {
   background-color: blueviolet;
 }
 
-.carrousel .slider_conteneur:nth-of-type(3) {
+.carrousel-2 .slider_conteneur .slider:nth-of-type(3) {
   background-color: darksalmon;
 }
 
-.button_carrousel {
-  width: 100vw;
+.ctrl-carrousel {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100vw;
 }
 
-.button_carrousel a {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: #dcc4e6;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ctrl-carrousel .rad-carrousel {
+  margin: .5rem 2rem .5rem 2rem;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

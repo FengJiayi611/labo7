@@ -1,7 +1,7 @@
-.carrousel{
+.carrousel-2{
  display: flex;
  width: 300vw;
- height: 20vh;
+ height: 30vh;
  transition: transform 5s;
 
     .slider_conteneur{
@@ -11,11 +11,16 @@
         justify-content: center;
         overflow-x: hidden;
         .slider{
-            width: 60%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @include media-tablet {
+                &{
+                    width: 60%;
+                }
+            }
             img{
                display: block;
                margin: 2%;
@@ -31,35 +36,28 @@
                     text-decoration: none;
                 } 
             }
+            &:nth-of-type(1){
+                background-color: aqua;
+            }
+            &:nth-of-type(2){
+                background-color: blueviolet;
+            } 
+            &:nth-of-type(3){
+                background-color: darksalmon;
+            }
         }
    
-    &:nth-of-type(1){
-        background-color: aqua;
-    }
-    &:nth-of-type(2){
-        background-color: blueviolet;
-    } 
-    &:nth-of-type(3){
-        background-color: darksalmon;
-    } //fin du div
+   
 }
 }
-.button_carrousel{
-    width: 100vw;
+
+
+.ctrl-carrousel{
     display: flex;
     justify-content: center;
-    align-items: center;
- 
-    a{
-        width: 1.5rem;
-        height: 1.5rem;
-        margin: 1rem;
-        padding: 0.5rem;
-        background-color: rgb(220, 196, 230);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
+    width: 100vw;
+    .rad-carrousel{
+        margin: .5rem 2rem .5rem 2rem;
+        display: block;
     }
 }
