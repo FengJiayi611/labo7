@@ -13,6 +13,13 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+		 <!-- carrousel -->
+		<section class="ctrl-carrousel">
+			<input class= "rad-carrousel" type="radio" name="red-carrousel">
+			<input class= "rad-carrousel" type="radio" name="red-carrousel">
+			<input class= "rad-carrousel" type="radio" name="red-carrousel">
+		</section>
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -26,7 +33,8 @@ get_header();
 			<?php
 			/* Start the Loop */		
             $precedent = "XXXXXX";
-			
+			$chaine_bouton_radio = '';
+
 			while ( have_posts() ) :
 				the_post();
                 convertirTableau($tPropriété);
@@ -34,13 +42,21 @@ get_header();
 				if($tPropriété['typeCours'] != $precedent):
 					if ("XXXXXX" != $precedent) : ?>
 			</section>
+			
+			<?php if($precedent == "Web") :?>
+			<section class="ctrl-carrousel">
+				<?php echo $chaine_bouton_radio; ?>
+			</section>
+			<?php endif?>
+			
 				<?php endif?>
 				<h2><?php echo $tPropriété['typeCours'] ?></h2>
-				<section>
+				<section <?php echo ($tPropriété['typeCours'] == 'Web'? 'class="carrousel-2"':'');?>>
 				<?php endif?>
 
 			<?php if($tPropriété['typeCours'] == "Web"):
 				get_template_part( 'template-parts/content', 'cours-carrousel' );
+				$chaine_bouton_radio .='<input class= "rad-carrousel" type="radio" name="red-carrousel">';
 			else:
 				get_template_part( 'template-parts/content', 'cours-article' );
 			endif;

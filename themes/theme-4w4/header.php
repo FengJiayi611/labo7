@@ -47,18 +47,6 @@
 		</div>
 		<!-- .site-branding -->
 	
-		
-		<?php 
-		if(is_front_page()): ?>
-
-			 <!-- carrousel -->
-			<section class="ctrl-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-			</section>
-       
-		<?php endif?>
 			
 	<!--	<img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">-->
 		<nav id="site-navigation" class="main-navigation">

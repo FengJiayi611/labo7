@@ -1159,26 +1159,6 @@ body .site-title a {
   }
 }
 
-section:nth-of-type(1) article {
-  background-image: linear-gradient(#f79c9c, lightblue);
-}
-
-section:nth-of-type(2) article {
-  background-image: linear-gradient(to bottom right, #ec3572, yellow);
-}
-
-section:nth-of-type(3) article {
-  background-image: linear-gradient(#8ef2b3, #f44ab5);
-}
-
-section:nth-of-type(4) article {
-  background-image: linear-gradient(to left, #8e91f2, #29a1ae, yellow);
-}
-
-section:nth-of-type(5) article {
-  background-image: linear-gradient(#f28eea, pink, #40c940);
-}
-
 /* layout
 --------------------------------------------- */
 .site {
@@ -1357,5 +1337,80 @@ La barre du millieu
 
 .fermeX2 {
   animation: fermeX2 0.1s both;
+}
+
+/* slider
+--------------------------------------------- */
+.carrousel-2 {
+  display: flex;
+  width: 900vw;
+  height: 30vh;
+  transition: transform 5s;
+  flex-wrap: nowrap;
+  background-color: aqua;
+}
+
+.carrousel-2 .slider_conteneur {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.carrousel-2 .slider_conteneur .slider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .carrousel-2 .slider_conteneur .slider {
+    width: 60%;
+  }
+}
+
+.carrousel-2 .slider_conteneur .slider img {
+  display: block;
+  margin: 2%;
+}
+
+.carrousel-2 .slider_conteneur .slider .slider_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrousel-2 .slider_conteneur .slider .slider_info p {
+  font-size: .8rem;
+}
+
+.carrousel-2 .slider_conteneur .slider .slider_info a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.carrousel-2 .slider_conteneur .slider:nth-of-type(1) {
+  background-color: aqua;
+}
+
+.carrousel-2 .slider_conteneur .slider:nth-of-type(2) {
+  background-color: blueviolet;
+}
+
+.carrousel-2 .slider_conteneur .slider:nth-of-type(3) {
+  background-color: darksalmon;
+}
+
+.ctrl-carrousel {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.ctrl-carrousel .rad-carrousel {
+  margin: .5rem 2rem .5rem 2rem;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
