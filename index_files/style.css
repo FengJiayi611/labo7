@@ -1116,7 +1116,6 @@ body .site-title a {
 .home .cours section {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .home .cours section article {
@@ -1341,12 +1340,19 @@ La barre du millieu
 
 /* slider
 --------------------------------------------- */
+.bloc {
+  flex-wrap: wrap;
+}
+
 .carrousel-2 {
   display: flex;
-  width: 900vw;
-  height: 30vh;
+  width: 600vw;
+  height: 50vh;
   transition: transform 5s;
   flex-wrap: nowrap;
+}
+
+.carrousel-2 article {
   background-color: aqua;
 }
 
