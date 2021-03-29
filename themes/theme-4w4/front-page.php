@@ -13,12 +13,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		 <!-- carrousel -->
-		<section class="ctrl-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-			<input class= "rad-carrousel" type="radio" name="red-carrousel">
-		</section>
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -51,7 +46,7 @@ get_header();
 			
 				<?php endif?>
 				<h2><?php echo $tPropriété['typeCours'] ?></h2>
-				<section <?php echo ($tPropriété['typeCours'] == 'Web'? 'class="carrousel-2"':'');?>>
+				<section <?php echo ($tPropriété['typeCours'] == 'Web'? 'class="carrousel-2"':'class="bloc"');?>>
 				<?php endif?>
 
 			<?php if($tPropriété['typeCours'] == "Web"):
