@@ -1159,26 +1159,6 @@ body .site-title a {
   }
 }
 
-section:nth-of-type(1) article {
-  background-image: linear-gradient(#f79c9c, lightblue);
-}
-
-section:nth-of-type(2) article {
-  background-image: linear-gradient(to bottom right, #ec3572, yellow);
-}
-
-section:nth-of-type(3) article {
-  background-image: linear-gradient(#8ef2b3, #f44ab5);
-}
-
-section:nth-of-type(4) article {
-  background-image: linear-gradient(to left, #8e91f2, #29a1ae, yellow);
-}
-
-section:nth-of-type(5) article {
-  background-image: linear-gradient(#f28eea, pink, #40c940);
-}
-
 /* layout
 --------------------------------------------- */
 .site {
@@ -1357,5 +1337,80 @@ La barre du millieu
 
 .fermeX2 {
   animation: fermeX2 0.1s both;
+}
+
+/* slider
+--------------------------------------------- */
+.carrousel {
+  display: flex;
+  width: 300vw;
+  height: 20vh;
+  transition: transform 5s;
+}
+
+.carrousel .slider_conteneur {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.carrousel .slider_conteneur .slider {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrousel .slider_conteneur .slider img {
+  display: block;
+  margin: 2%;
+}
+
+.carrousel .slider_conteneur .slider .slider_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrousel .slider_conteneur .slider .slider_info p {
+  font-size: .8rem;
+}
+
+.carrousel .slider_conteneur .slider .slider_info a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.carrousel .slider_conteneur:nth-of-type(1) {
+  background-color: aqua;
+}
+
+.carrousel .slider_conteneur:nth-of-type(2) {
+  background-color: blueviolet;
+}
+
+.carrousel .slider_conteneur:nth-of-type(3) {
+  background-color: darksalmon;
+}
+
+.button_carrousel {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_carrousel a {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #dcc4e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
