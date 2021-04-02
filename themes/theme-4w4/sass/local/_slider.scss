@@ -69,3 +69,30 @@ article{
         display: block;
     }
 }
+
+section:nth-of-type(3) {  
+    article{
+        background-image: linear-gradient(rgb(247, 156, 156), lightblue);
+    }
+} 
+
+section:nth-of-type(4){
+    article{
+        background-image: linear-gradient( to bottom right, rgb(236, 53, 114), yellow);  
+    }
+}
+section:nth-of-type(5){
+    article{
+        background-image: linear-gradient( rgb(142, 242, 179), rgb(244, 74, 181));  
+    }
+}
+section:nth-of-type(6){
+    article{
+        background-image: linear-gradient(to left, rgb(142, 145, 242), rgb(41, 161, 174), yellow);  
+    }
+}
+section:nth-of-type(7){
+    article{
+        background-image: linear-gradient( rgb(242, 142, 234),pink, rgb(64, 201, 64));  
+    }
+}
