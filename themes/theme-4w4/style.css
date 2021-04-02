@@ -715,7 +715,7 @@ h1 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   left: -999em;
-  z-index: 99999;
+  z-index: 99999999;
   background-color: cadetblue;
   margin-left: 0px;
 }
@@ -1199,6 +1199,7 @@ body .site-title a {
   width: 300vw;
   height: 20vh;
   transition: transform 5s;
+  z-index: -1;
 }
 
 .carrousel div {
