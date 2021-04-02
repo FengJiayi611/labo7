@@ -697,6 +697,7 @@ h1 {
   width: 100%;
   list-style: none;
   margin: -32px;
+  margin-top: 20px;
   padding-left: 0;
   background-color: #000;
   text-align: left;
@@ -707,10 +708,16 @@ h1 {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 180%;
-  transition: left 0.5s;
+  top: 50%;
+  transition: left 1s;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   left: -999em;
   z-index: 99999;
+  background-color: cadetblue;
+  margin-left: 0px;
 }
 
 .main-navigation ul ul li a {
@@ -719,6 +726,21 @@ h1 {
 
 .main-navigation ul ul a {
   width: 100%;
+}
+
+@keyframes anime {
+  0% {
+    background-color: cadetblue;
+  }
+  50% {
+    background-color: #58a879;
+  }
+  70% {
+    background-color: #4f9b3f;
+  }
+  100% {
+    background-color: #528b7f;
+  }
 }
 
 .main-navigation ul li:hover > ul,
@@ -803,6 +825,8 @@ menu tablet
     position: absolute;
     width: 400px;
     height: 500px;
+    animation: none;
+    background-color: black;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
