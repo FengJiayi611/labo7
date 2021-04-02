@@ -3,7 +3,7 @@
  https://github.com/FengJiayi611/labo6
  
 
-titre labo5
+titre labo6
 auteur Feng Jiayi
 gr 02 lundi
 
