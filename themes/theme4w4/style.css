@@ -1218,7 +1218,7 @@ Liste des blocs de cours par type_de_cours
 /* local slider
 --------------------------------------------- */
 .carrousel-2 {
-  width: 600vw;
+  width: 300vw;
   height: 30vh;
   display: flex;
   transition: transform .5s;
@@ -1230,7 +1230,7 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1287,6 +1287,18 @@ Liste des blocs de cours par type_de_cours
 .ctrl-carrousel .rad-carrousel {
   display: block;
   margin: .5rem .8rem .5rem .8rem;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(4) {
+  display: none;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(5) {
+  display: none;
+}
+
+.ctrl-carrousel .rad-carrousel:nth-of-type(6) {
+  display: none;
 }
 
 /* local burger
