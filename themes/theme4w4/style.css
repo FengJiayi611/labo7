@@ -1218,7 +1218,7 @@ Liste des blocs de cours par type_de_cours
 /* local slider
 --------------------------------------------- */
 .carrousel-2 {
-  width: 300vw;
+  width: 800vw;
   height: 30vh;
   display: flex;
   transition: transform .5s;
@@ -1230,7 +1230,7 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 100vw;
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1289,16 +1289,39 @@ Liste des blocs de cours par type_de_cours
   margin: .5rem .8rem .5rem .8rem;
 }
 
-.ctrl-carrousel .rad-carrousel:nth-of-type(4) {
-  display: none;
-}
-
-.ctrl-carrousel .rad-carrousel:nth-of-type(5) {
-  display: none;
-}
-
-.ctrl-carrousel .rad-carrousel:nth-of-type(6) {
-  display: none;
+@media screen and (min-width: 37.5em) {
+  .carrousel-2 {
+    width: 300vw;
+    height: 30vh;
+    display: flex;
+    transition: transform .5s;
+    transform: translate(0);
+    flex-wrap: nowrap !important;
+  }
+  .carrousel-2 .slide__conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  .ctrl-carrousel {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  .ctrl-carrousel .rad-carrousel {
+    display: block;
+    margin: .5rem .8rem .5rem .8rem;
+  }
+  .ctrl-carrousel .rad-carrousel:nth-of-type(4) {
+    display: none;
+  }
+  .ctrl-carrousel .rad-carrousel:nth-of-type(5) {
+    display: none;
+  }
+  .ctrl-carrousel .rad-carrousel:nth-of-type(6) {
+    display: none;
+  }
 }
 
 /* local burger

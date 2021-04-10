@@ -1,5 +1,5 @@
 .carrousel-2 {
-    width: 300vw;
+    width: 800vw;
     height: 30vh;
     display : flex;
     transition : transform .5s;
@@ -10,7 +10,7 @@
         display : flex;
         justify-content: center;
         align-items: center;
-        width : 50vw;
+        width : 100vw;
         .slide {
             width : 100%;
             display : flex;
@@ -62,15 +62,42 @@
     .rad-carrousel {
         display : block;
         margin : .5rem .8rem .5rem .8rem; 
-        &:nth-of-type(4){
-            display: none;
+    }
+}
+@media screen and (min-width: 37.5em) {
+    .carrousel-2 {
+        width: 300vw;
+        height: 30vh;
+        display : flex;
+        transition : transform .5s;
+        transform : translate(0);
+        flex-wrap: nowrap !important;
+    
+        .slide__conteneur {
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            width : 50vw;
         }
-        &:nth-of-type(5){
-            display: none;
-        }
-        &:nth-of-type(6){
-            display: none;
+    }
+
+
+    .ctrl-carrousel {
+        display : flex;
+        justify-content: center;
+        width : 100vw;
+        .rad-carrousel {
+            display : block;
+            margin : .5rem .8rem .5rem .8rem; 
+            &:nth-of-type(4){
+                display: none;
+            }
+            &:nth-of-type(5){
+                display: none;
+            }
+            &:nth-of-type(6){
+                display: none;
+            }
         }
     }
 }
-
